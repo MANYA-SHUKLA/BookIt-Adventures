@@ -33,6 +33,9 @@ app.use('/api/promo', promoRoutes);
 app.get('/api/health', (req, res) => {
   res.json({ message: 'BookIt API is running!' });
 });
+app.get('/', (req, res) => {
+  res.send('Welcome to BookIt Adventures API 🚀 built by MANYA SHUKLA');
+});
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
