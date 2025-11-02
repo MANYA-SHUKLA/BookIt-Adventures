@@ -19,7 +19,7 @@ connectDB();
 // Middleware
 
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://<your-vercel-app>.vercel.app'],
+  origin: ['http://localhost:3000', 'https://book-it-adventures.vercel.app'],
   credentials: true
 }));
 app.use(express.json());
